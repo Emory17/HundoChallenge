@@ -21,7 +21,8 @@ function displayResults() {
                 table.innerHTML += "<tr><td>" + i + "</tr></td>";
             }
         }
-    } else {
+    }
+    else {
         for (i = startValue; i >= endValue; i--) {
             if (i % 2 == 0) {
                 table.innerHTML += "<tr><td><strong>" + i + "</strong></tr></td>";
