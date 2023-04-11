@@ -3,10 +3,16 @@ function displayResults() {
     let endValue = document.getElementById("endValue").value;
     let table = document.getElementById("results");
 
+    if(startValue=="" || endValue==""){
+        table.innerHTML = "<tr><td>Error: Missing Value</tr></td>";
+        return;
+    }
+
     startNumber  = parseInt(startValue);
     endNumber = parseInt(endValue);
 
     table.innerHTML = "";
+
 
     if (startNumber <= endNumber) {
         for (i = startValue; i <= endValue; i++) {
