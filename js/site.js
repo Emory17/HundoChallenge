@@ -13,7 +13,6 @@ function displayResults() {
 
     table.innerHTML = "";
 
-
     if (startNumber <= endNumber) {
         for (i = startValue; i <= endValue; i++) {
             if (i % 2 == 0) {
