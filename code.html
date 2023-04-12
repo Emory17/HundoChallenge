@@ -118,7 +118,7 @@ function displayResults() {
     let table = document.getElementById("results");
 
     if(startValue=="" || endValue==""){
-        table.innerHTML = "<tr><td>Error: Missing Value</td></tr>";
+        table.innerHTML = "&lt;tr>&lt;td>Error: Missing Value&lt;/td>&lt;/tr>";
         return;
     }
 
@@ -130,9 +130,9 @@ function displayResults() {
     if (startNumber <= endNumber) {
         for (i = startNumber; i <= endNumber; i++) {
             if (i % 2 == 0) {
-                table.innerHTML += "<tr><td><strong>" + i + "</strong></td></tr>";
+                table.innerHTML += "&lt;tr>&lt;td>&lt;strong>" + i + "&lt;/strong>&lt;/td>&lt;/tr>";
             } else {
-                table.innerHTML += "<tr><td>" + i + "</td></tr>";
+                table.innerHTML += "&lt;tr>&lt;td>" + i + "&lt;/td>&lt;/tr>";
             }
         }
     }
@@ -140,9 +140,9 @@ function displayResults() {
         for (i = startNumber; i >= endNumber; i--) {
             if (i % 2 == 0) {
                 table.innerHTML +=
-                    "<tr><td><strong>" + i + "</strong></td></tr>";
+                    "&lt;tr>&lt;td><strong>" + i + "&lt;/strong>&lt;/td>&lt;/tr>";
             } else {
-                table.innerHTML += "<tr><td>" + i + "</td></tr>";
+                table.innerHTML += "&lt;tr>&lt;td>" + i + "&lt;/td>&lt;/tr>";
             }
         }
     }
