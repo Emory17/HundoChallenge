@@ -15,7 +15,6 @@ function displayResults() {
 
     if (startNumber <= endNumber) {
         for (i = startNumber; i <= endNumber; i++) {
-            console.log(i);
             if (i % 2 == 0) {
                 table.innerHTML += "<tr><td><strong>" + i + "</strong></td></tr>";
             } else {
